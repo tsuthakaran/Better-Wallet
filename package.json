@@ -1,0 +1,12 @@
+{
+    "name": "w4llet-fullstack",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "install-all": "npm --prefix frontend install && npm --prefix backend install",
+        "dev": "concurrently -n BACKEND,FRONTEND -c yellow,cyan \"npm --prefix backend run start:dev\" \"npm --prefix frontend run dev\""
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}

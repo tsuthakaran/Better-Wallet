@@ -1,5 +1,5 @@
 // binance-websocket.ts
-import { PriceData } from "@/abstracts/portfolio/interfaces";
+import { PriceData } from "@/types";
 
 class BinanceWebSocketManager {
   private activeConnections: Map<string, WebSocket> = new Map();

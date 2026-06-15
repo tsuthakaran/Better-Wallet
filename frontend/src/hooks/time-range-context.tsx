@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { HistoricalQueue, PriceData } from "@/abstracts/portfolio/interfaces";
-import { Kline, TimeRange, TimeRangeContextType } from "@/abstracts/portfolio/types";
+import { HistoricalQueue, PriceData } from "@/types";
+import { Kline, TimeRange, TimeRangeContextType } from "@/types";
 import { useState, createContext, useContext, useEffect, useRef, useCallback, useMemo } from "react";
 import axios from "axios";
-import { TIME_RANGE_CONFIG } from "@/components/bryan-portfolio/main/price-graph-config";
+import { TIME_RANGE_CONFIG } from "@/components/portfolio/main/price-graph-config";
 import { binanceWebSocketManager } from "@/services/binance-websocket";
 
 
